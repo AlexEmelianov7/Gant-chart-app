@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Freestyle app</title>
+
+	<!-- Bootstrap the UI5 core library -->
+	<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_horizon"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-language="en"
+			data-sap-ui-resourceroots='{"gantt.chart.app": "./"}'>
+	</script>
+
+	<script>
+		new sap.ui.core.Component.create({
+			// name: "gantt.chart.app",
+			manifest: "./manifest.json"
+		}).then(oComponent => {
+			const oContainer = new sap.ui.core.ComponentContainer({
+				component: oComponent
+			});
+			oContainer.placeAt("content");
+		});
+		
+		// sap.ui.getCore().attachInit(function() {
+		// 	new sap.ui.core.ComponentContainer({
+		// 		name : "gantt.chart.app"
+		// 	}).placeAt("content");
+		// });
+	</script>
+</head>
+<body class='sapUiBody sapUiSizeCompact' id="content">
+</body>
+</html>

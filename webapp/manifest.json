@@ -1,0 +1,89 @@
+{
+	"sap.app": {
+		"id": "gantt.chart.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "./model/localData.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize",
+			"sap_horizon"
+		]
+	},
+	"sap.ui5": {
+		"rootView": "gantt.chart.app.view.App",
+		"componentUsages": {
+			"componentCreation": {
+				"name": "gantt.chart.app.Component"
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "gantt.chart.app.view",
+				"controlId": "RootApp",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "Tasks",
+					"target": [
+						"tasks"
+					]
+				}
+			],
+			"targets": {
+				"tasks": {
+					"viewName": "Tasks",
+					"viewId": "tasks",
+					"viewLevel": 1
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		},
+		"dependencies": {
+			"minUI5Version": "1.121.0",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "gantt.chart.app.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "mainService"
+			}
+		}
+	}
+}

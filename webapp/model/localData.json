@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "startDate": "20240401000000",
+      "endDate": "20240430000000",
+      "tasks": [
+        {
+          "id": 101,
+          "name": "Task 1",
+          "startDate": "20240401000000",
+          "endDate": "20240415000000",
+          "subtasks": [
+            {
+              "id": 1011,
+              "name": "Subtask 1.1",
+              "startDate": "20240401000000",
+              "endDate": "20240410000000"
+            },
+            {
+              "id": 1012,
+              "name": "Subtask 1.2",
+              "startDate": "20240411000000",
+              "endDate": "20240415000000"
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Task 2",
+          "startDate": "20240416000000",
+          "endDate": "20240430000000",
+          "subtasks": [
+            {
+              "id": 1021,
+              "name": "Subtask 2.1",
+              "startDate": "20240416000000",
+              "endDate": "20240420000000"
+            },
+            {
+              "id": 1022,
+              "name": "Subtask 2.2",
+              "startDate": "20240421000000",
+              "endDate": "20240430000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "startDate": "20240501000000",
+      "endDate": "20240531000000",
+      "tasks": [
+        {
+          "id": 201,
+          "name": "Task 1",
+          "startDate": "20240501000000",
+          "endDate": "20240515000000",
+          "subtasks": [
+            {
+              "id": 2011,
+              "name": "Subtask 1.1",
+              "startDate": "20240501000000",
+              "endDate": "20240505000000"
+            },
+            {
+              "id": 2012,
+              "name": "Subtask 1.2",
+              "startDate": "20240506000000",
+              "endDate": "20240510000000"
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Task 2",
+          "startDate": "20240516000000",
+          "endDate": "20240531000000",
+          "subtasks": [
+            {
+              "id": 2021,
+              "name": "Subtask 2.1",
+              "startDate": "20240516000000",
+              "endDate": "20240520000000"
+            },
+            {
+              "id": 2022,
+              "name": "Subtask 2.2",
+              "startDate": "20240521000000",
+              "endDate": "20240525000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "startDate": "20240601000000",
+      "endDate": "20240630000000",
+      "tasks": [
+        {
+          "id": 301,
+          "name": "Task 1",
+          "startDate": "20240601000000",
+          "endDate": "20240615000000",
+          "subtasks": [
+            {
+              "id": 3011,
+              "name": "Subtask 1.1",
+              "startDate": "20240601000000",
+              "endDate": "20240605000000"
+            },
+            {
+              "id": 3012,
+              "name": "Subtask 1.2",
+              "startDate": "20240606000000",
+              "endDate": "20240610000000"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Task 2",
+          "startDate": "20240616000000",
+          "endDate": "20240630000000",
+          "subtasks": [
+            {
+              "id": 3021,
+              "name": "Subtask 2.1",
+              "startDate": "20240616000000",
+              "endDate": "20240620000000"
+            },
+            {
+              "id": 3022,
+              "name": "Subtask 2.2",
+              "startDate": "20240621000000",
+              "endDate": "20240625000000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

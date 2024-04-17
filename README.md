@@ -1,1 +1,1 @@
-# Gant-chart-app
+# Gantt-chart-app
